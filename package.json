@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "@types/jest": "24.0.6",
     "@types/node": "11.9.4",
     "@types/react": "16.8.4",
     "@types/react-dom": "16.8.2",
+    "global": "^4.3.2",
+    "parcel-bundler": "^1.11.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
+    "tslint": "^5.12.1",
     "typescript": "3.3.3333"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "parcel build ./src/packages/index.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -26,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "tslint-react": "^3.6.0"
+  }
 }
