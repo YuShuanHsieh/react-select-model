@@ -1,9 +1,8 @@
 {
-  "name": "react-select-model",
-  "version": "1.0.0",
-  "private": true,
-  "main": "index.js",
-  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "react-select-model": "file:../dist"
+  },
   "peerDependencies": {
     "react": ">=16"
   },
@@ -25,8 +24,9 @@
     "tslint-react": "^3.6.0"
   },
   "scripts": {
-    "build": "parcel build ./src/index.ts && tsc --emitDeclarationOnly true",
-    "postbuild": "cp package.json ./dist"
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

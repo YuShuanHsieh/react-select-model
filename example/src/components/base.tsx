@@ -7,7 +7,7 @@ import {
 } from "@material-ui/core"
 import React, { Component } from "react"
 
-import { SelectionModel } from "../packages/core/selectionModel"
+import { SelectionModel } from "react-select-model"
 
 export class BaseExample extends Component {
   initSelect = ["id", "name"]
@@ -39,7 +39,7 @@ export class BaseExample extends Component {
           id={this.id}
           onChange={this.handleChange}
         >
-        {(props) => {
+        {(props: any) => {
           return (
             <List>
               <ListItem>

@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core"
 import React, { Component } from "react"
 
 import "./App.css"
-import { BaseExample } from "./examples/base"
+import { BaseExample } from "./components/base"
 
 class App extends Component {
   render() {
