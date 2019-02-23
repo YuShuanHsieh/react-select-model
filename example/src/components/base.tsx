@@ -6,7 +6,6 @@ import {
   ListItemSecondaryAction,
 } from "@material-ui/core"
 import React, { Component } from "react"
-
 import { SelectionModel } from "react-select-model"
 
 export class BaseExample extends Component {

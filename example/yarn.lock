@@ -1055,7 +1055,7 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.1.tgz#48fd98c1561fe718b61733daed46ff115b496e18"
   integrity sha512-eqz8c/0kwNi/OEHQfvIuJVLTst3in0e7uTKeuY+WL/zfKn0xVujOTp42bS/vUUokhK5P2BppLd9JXMOMHcgbjA==
 
-"@types/react-dom@16.8.2":
+"@types/react-dom@16.8.2", "@types/react-dom@^16.8.2":
   version "16.8.2"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.2.tgz#9bd7d33f908b243ff0692846ef36c81d4941ad12"
   integrity sha512-MX7n1wq3G/De15RGAAqnmidzhr2Y9O/ClxPxyqaNg96pGyeXUYPSvujgzEVpLo9oIP4Wn1UETl+rxTN02KEpBw==
@@ -1069,7 +1069,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@16.8.4":
+"@types/react@*", "@types/react@16.8.4", "@types/react@^16.8.4":
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.4.tgz#134307f5266e866d5e7c25e47f31f9abd5b2ea34"
   integrity sha512-Mpz1NNMJvrjf0GcDqiK8+YeOydXfD8Mgag3UtqQ5lXYTsMnOiHcKmO48LiSWMb1rSHB9MV/jlgyNzeAVxWMZRQ==
@@ -9460,6 +9460,14 @@ react-scripts@2.1.5:
     workbox-webpack-plugin "3.6.3"
   optionalDependencies:
     fsevents "1.2.4"
+
+react-select-model@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-select-model/-/react-select-model-1.0.0.tgz#bc8a041500c04b6a8c96eb030b4aff031aff0145"
+  integrity sha512-/5k70t7cqHEdiJU+h8DQxD5OMQEO0z6Huft7JbjBBp1c20FH4f/HF/+aYCPieSlfasgj/sxhE7ZUhJYE2iLQVw==
+  dependencies:
+    react "^16.8.3"
+    react-dom "^16.8.3"
 
 react-transition-group@^2.2.1:
   version "2.5.3"

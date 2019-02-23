@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import * as React from "react"
 
 import {
   Item,
@@ -6,11 +6,11 @@ import {
   SelectionModelState,
 } from "../types"
 
-export class SelectionModel extends Component<
+export class SelectionModel extends React.Component<
   SelectionModelProps,
   SelectionModelState
 > {
-  static defaultProps = {
+  static defaultProps: SelectionModelProps = {
     id: (item: Item) => item.id,
     initSelect: null,
     items: [],
