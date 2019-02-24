@@ -3,8 +3,9 @@
     "extends": ["tslint:latest", "tslint-react"],
     "rules": {
         "max-line-length": {
-            "options": [80]
+            "options": [120]
         },
+        "object-literal-sort-keys": false,
         "jsx-no-multiline-js": false,
         "member-access": false,
         "semicolon": [true, "never"],

@@ -14,16 +14,13 @@ import {
 
 import {
   Item,
-  SelectionModelActions,
   SelectionModelProps,
+  SelectionModelActions
 } from "../types"
 
 export function useSelectionModel(props: SelectionModelProps): [Item[], SelectionModelActions] {
   const [selection, dispatch] = useReducer(reducer, new Set<Item>())
-  const [preProps, setPreProps] = useState<SelectionModelProps>({
-    initSelect: [],
-    items: [],
-    id: (row: Item) => row.id})
+  const [preProps, setPreProps] = useState<SelectionModelProps>({initSelect: [], items: [], id: row => row.id})
   const toggle = (item: Item) => { dispatch(toggleSelect(item)) }
   const toggleAll = () => {
     if (selection.size) {
